@@ -48,7 +48,7 @@ void secretCode3(){
     {
         //Appel de la function permettant la verification des caracteres saisies
         if(!(checkStr(tabChaine))){
-            printf("code  not valid");
+            printf("code  not valid \n");
             return;
         }
         //Conversion des caracteres saisie en un nombre entier    
@@ -97,10 +97,15 @@ void secretCode3(){
 }
 
 void computerNote(){
+      //Declaration du table a deux dimensions, une variable pour la somme des notes et une autre pour les coeffs  
+      float tab[4][2],somme=0, somCoef=0;
 
-      float tab[4][2],somme=0,row=0, col=0, somCoef=0;
+      //Declaration des tableaux contenant les valeurs des coefficients et un autre pour stoker les notes finales
       int coef [4]={4,2,3,2},noteFinale[4];
+
+      //Declaration de la variable destinée à recevoir la moyenne finale
       float moyenne;
+       // Declaration des tableaux contenant les coefficients et un autre pour stocker le nom de l'eleve
       char *tabCoefName[]={"Maths","Anglais","Français","Svt"}, student[80];
 
       printf("Veillez saisir le nom complet de l'eleve :\n");
