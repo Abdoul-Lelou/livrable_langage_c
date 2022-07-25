@@ -28,7 +28,7 @@ int checkStr(char *inpCode) {
 
 //function permettant de verifier si un utilisateur a saisie un bon code
 
-void secretCode3(){
+void secretCode(){
     //tableau contenant les codes predefinies
     int tab[]={587,1200,222,0102,555};
 
@@ -96,7 +96,7 @@ void secretCode3(){
     }
 }
 
-void computerNote(){
+void computeNote(){
       //Declaration du table a deux dimensions, une variable pour la somme des notes et une autre pour les coeffs  
       float tab[4][2],somme=0, somCoef=0;
 
@@ -171,7 +171,10 @@ void computerNote(){
 
 int main()
 {
-    
-   secretCode3();     
+    //Appel de la function secretCode
+   secretCode(); 
+
+   //Appel de la function computeNote
+  // computeNote();  
    return 0;
 }
